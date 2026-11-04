@@ -6,6 +6,8 @@ on:  # 触发条件
     paths:
       - 'docs/**'  # 仅当 docs 目录下文件变化时触发
       - 'mkdocs.yml'  # 仅当 MkDocs 配置文件变化时触发
+      - '.github/workflows/deploy.yml'  # 工作流配置自身变化时也触发
+  workflow_dispatch:  # 支持在 Actions 页面手动触发
 jobs:  # 工作流任务
   deploy:
     runs-on: ubuntu-latest  # 运行环境：Ubuntu 最新版
