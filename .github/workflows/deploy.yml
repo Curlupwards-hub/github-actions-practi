@@ -15,9 +15,9 @@ jobs:  # 工作流任务
       - name: 检出代码  # 步骤1：拉取GitHub仓库代码
         uses: actions/checkout@v4
       - name: 设置Python环境  # 步骤2：配置Python（MkDocs依赖Python）
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'  # 指定Python版本
+          python-version: '3.11'  # 指定Python版本（3.9在ubuntu-26.04已不可用）
       - name: 安装MkDocs及主题  # 步骤3：安装依赖工具
         run: |
           pip install mkdocs-material  # 安装MkDocs和Material主题
