@@ -49,8 +49,8 @@ mkdocs serve      # 本地预览 http://127.0.0.1:8000
 git add .
 # 2. 提交代码
 git commit -m "初始化MkDocs项目并配置GitHub Actions"
-# 3. 推送到GitHub的main分支
-git push origin main
+# 3. 推送到GitHub的master分支
+git push origin master
 ```
 
 推送后，GitHub Actions 会自动运行单元测试，并在 `docs/` 或 `mkdocs.yml` 变化时构建并部署文档站点到 GitHub Pages。

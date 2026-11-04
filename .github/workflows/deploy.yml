@@ -2,7 +2,7 @@ name: Deploy MkDocs to GitHub Pages  # 工作流名称（自定义）
 on:  # 触发条件
   push:
     branches:
-      - main  # 仅在 main 分支推送代码时触发
+      - master  # 仅在 master 分支推送代码时触发
     paths:
       - 'docs/**'  # 仅当 docs 目录下文件变化时触发
       - 'mkdocs.yml'  # 仅当 MkDocs 配置文件变化时触发
