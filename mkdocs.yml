@@ -1,0 +1,8 @@
+site_name: 我的技术文档  # 网站名称（将显示在页面标题和导航栏）
+theme:
+  name: material  # 使用 Material 主题（美观且支持响应式）
+nav:  # 网站导航结构（对应 docs 目录下的文件）
+  - 首页: index.md
+  - 关于: about.md
+  - 指南: guide.md
+  - API: api.md
